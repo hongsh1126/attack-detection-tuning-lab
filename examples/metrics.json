@@ -1,0 +1,96 @@
+{
+  "train_seed": 42,
+  "test_seed": 2026,
+  "unit": "scenario",
+  "selection": "development recall >= 0.6; minimize FP, then maximize recall",
+  "results": {
+    "baseline": {
+      "config": {
+        "threshold": 5,
+        "window": 300,
+        "spray_threshold": null
+      },
+      "held_out": {
+        "TP": 16,
+        "FP": 16,
+        "TN": 16,
+        "FN": 32,
+        "precision": 0.5,
+        "recall": 0.3333,
+        "false_positive_rate": 0.5,
+        "alerts": 32,
+        "mean_detected_delay_seconds": 48.0,
+        "missed_scenarios": [
+          "case-003",
+          "case-004",
+          "case-008",
+          "case-009",
+          "case-013",
+          "case-014",
+          "case-018",
+          "case-019",
+          "case-023",
+          "case-024",
+          "case-028",
+          "case-029",
+          "case-033",
+          "case-034",
+          "case-038",
+          "case-039",
+          "case-043",
+          "case-044",
+          "case-048",
+          "case-049",
+          "case-053",
+          "case-054",
+          "case-058",
+          "case-059",
+          "case-063",
+          "case-064",
+          "case-068",
+          "case-069",
+          "case-073",
+          "case-074",
+          "case-078",
+          "case-079"
+        ]
+      }
+    },
+    "tuned": {
+      "config": {
+        "threshold": 8,
+        "window": 300,
+        "spray_threshold": 5
+      },
+      "held_out": {
+        "TP": 32,
+        "FP": 0,
+        "TN": 32,
+        "FN": 16,
+        "precision": 1.0,
+        "recall": 0.6667,
+        "false_positive_rate": 0.0,
+        "alerts": 32,
+        "mean_detected_delay_seconds": 66.0,
+        "missed_scenarios": [
+          "case-004",
+          "case-009",
+          "case-014",
+          "case-019",
+          "case-024",
+          "case-029",
+          "case-034",
+          "case-039",
+          "case-044",
+          "case-049",
+          "case-054",
+          "case-059",
+          "case-064",
+          "case-069",
+          "case-074",
+          "case-079"
+        ]
+      }
+    }
+  }
+}

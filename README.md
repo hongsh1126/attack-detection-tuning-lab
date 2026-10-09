@@ -38,9 +38,9 @@ Separate seeds are drawn from the same simplified generator; they do not establi
 4. Modify a copy of the generator to include benign shared-IP traffic, slow spraying, or compromised familiar devices. Select on development data again and use a fresh test seed.
 5. Add a new detection and tests, document its ATT&CK mapping, and discuss evidence limitations.
 
-## 한국어 설명
+## Plain-language overview
 
-ATT&CK는 공격자의 행동 도감, 탐지 규칙은 경보기, 튜닝은 경보기 조정입니다. 이 프로젝트에서는 가상 로그인 기록만 사용합니다. `python lab.py` 실행 후 `results/REPORT.md`를 보면 조정 전후에 정상 사용을 공격으로 착각한 횟수와 놓친 공격을 비교할 수 있습니다. 결과는 교육용 합성 데이터 실험이며 실제 기업 환경의 탐지 성능을 보장하지 않습니다.
+ATT&CK describes attacker behaviors. Detection rules act like alarms, and tuning adjusts how those alarms respond. This project uses synthetic login records only. Run `python lab.py` and open `results/REPORT.md` to compare false alarms and missed attacks before and after tuning. Results are educational simulations and do not establish detection performance in a real organization.
 
 ## License
 
